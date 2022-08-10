@@ -1,3 +1,5 @@
 # workstream
 record of learning c (introduction to programming)
-  this section describe the process of learnig programing for the first time. it do also include all the previous made attempts whether they were correct or no.
+  this section contain all the stupid codes that i wrote. as it can be seen there is improvement and progress.
+  int the this section serves as some kind of journal or a portfolio to be exact.
+  all rights reserved and bla bla bla
