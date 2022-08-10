@@ -1,0 +1,1 @@
+what is the difference between those two kinds of text editors for me both they serve for the same thing
