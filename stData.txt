@@ -1,0 +1,17 @@
+3  345
+Lisa Miller  890238  Y  4
+Mathematics  MTH345  4  A
+Physics  PHY357  3  B
+ComputerSci  CSC478  3  B
+History  HIS356  3  A
+
+Tom White  123456  N  3
+Calculus  MTH324  3  C
+ComputerSci  CSC141  3  B
+French  FRN254  3  A
+
+Mohamed Radi  975432  Y  4
+Algebra  MTH156  3  A
+English  ENG457  4  A
+Biology  BIO187  3  B
+Spanich  SPN657  3  A

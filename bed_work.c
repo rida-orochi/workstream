@@ -1,0 +1,1 @@
+//the thing is that i can work just fine from my bed without bothering when it comes to programing since that i relate completly on my laptop
