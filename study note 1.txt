@@ -1,0 +1,12 @@
+12//note that when we create the code we make it in a way  that it can be self sufficient by using conditions that deals with each seperate case
+12// in this part we need to keep it simple just an itroduction to see if we can deal with the normal funcitons of stak
+13// yeah first since that we don't have the node we need to create it with the help of malloc
+22//the thing is that i need to know all the necessairy functions that are used with the stack to be familiar with 
+//so we will be dealing with things like reversing staks
+22//the case in which the stakc is empty
+30//in that part i think i should be able to deal with the add and remove, other functions are to be added yet let's just focuse on those first
+29//also i need to create a function that will show to me the content of the list
+31//i forgot tho assign a value to the node so for the moment it's empty the right part to assign value to the node is when we just created it before adding it to the list
+15//now it's been initiated 
+//something is odd why they don't show me the list after that i have deleted the content of the list
+//it's like taht they are ignoring the steps after the print and i don't know why

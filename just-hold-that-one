@@ -1,0 +1,70 @@
+// Simple test of a binary search tree.
+// To see a tree that works with integers rather than with characters,
+// look in "tree.h" and uncomment the "#define INT" line. Then recompile.
+// The macros 'printValue' and 'getValue' are different depending on what
+// type of values are in the tree.
+#include "tree.h"
+#include <stdio.h>
+#include <string.h>
+// To see what options there are in testing the tree, enter 'h'.
+void printInstructions(){
+printf("\nOptions are:\n");
+printf("\td -> delete an item\n");
+printf("\tf -> find the first item\n");
+printf("\th -> help (print these instructions)\n");
+printf("\ti -> insert an item\n");
+printf("\tl -> find the last item\n");
+printf("\tn -> find the 'nth' item\n");
+printf("\tq -> quit\n");
+printf("\ts -> search for an item\n");
+printf("\n");
+}
+void main() {
+char c;
+TreeItem item;
+int n;
+// Note that the following lines are optional, depending on whether you
+// want a tree of integers or of characters (the default).
+#ifdef INT
+int values[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+#else
+#ifdef STRING
+char *values[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i"};
+#else
+char *values = "abcdefghi";
+#endif
+#endif
+Tree *root = makeBST(values, 9);
+count(root);
+//Tree *root = newTree('m');
+printList(root);
+printf("\n");
+printTree2(root);
+printf("\n");
+while((c = getchar()) != 'q') {
+switch(c) {
+case '\n': continue;
+case 'd': getValue(item); deleteTree(root, item); break;
+case 'f': printf("First is "); printValue(getFirst(root));
+printf("\n"); break;
+case 'h': printInstructions(); break;
+case 'i': getValue(item); insertTree(root, item); break;
+case 'l': printf("Last is "); printValue(getLast(root));
+printf("\n"); break;
+case 'n': scanf("%d", &n); printf("%dth is ", n);
+printValue(getNth(root, n)); printf("\n"); break;
+case 's': printf("Found "); getValue(item);
+printValue(findTree(root, item)); printf("\n"); break;
+default:
+#ifndef STRING
+insertTree(root, c);
+#endif
+break;
+}
+printList(root);
+printf("\n");
+printTree2(root);
+printf("\n");
+}
+
+}
