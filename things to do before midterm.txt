@@ -1,4 +1,0 @@
-the things that I need to learn before the midterm are: 
-    linked lists: 
-        create-search-add-delete-reverse-traverse
-    
